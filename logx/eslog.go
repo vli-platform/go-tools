@@ -78,8 +78,8 @@ func (e *esLog) SetFieldsDefault(fields Fields) {
 	e.fieldsDefault = fields
 }
 
-func (e *esLog) WithFields(fields Fields) esLog {
-	return esLog{
+func (e *esLog) WithFields(fields Fields) *esLog {
+	return &esLog{
 		Index:         e.Index,
 		BulkIndexer:   e.BulkIndexer,
 		OnFail:        e.OnFail,

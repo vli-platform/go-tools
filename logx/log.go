@@ -22,7 +22,7 @@ func SetConfig(cfg Config) error {
 		return err
 	}
 
-	logCtx.esLog = eLog
+	logCtx.esLog = &eLog
 	if cfg.Fields["hostName"] == "" && os.Getenv("HOSTNAME") != "" {
 		cfg.Fields["hostName"] = os.Getenv("HOSTNAME")
 	}
@@ -35,7 +35,7 @@ func SetConfig(cfg Config) error {
 }
 
 type LogX struct {
-	esLog
+	*esLog
 }
 
 func (l *LogX) InfoP(mss ...interface{}) {
