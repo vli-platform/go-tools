@@ -214,10 +214,12 @@ func (e *esLog) cloudLog(level LogLevel, mss ...interface{}) error {
 			OnSuccess: func(ctx context.Context, item esutil.BulkIndexerItem, res esutil.BulkIndexerResponseItem) {
 			},
 			OnFailure: func(ctx context.Context, item esutil.BulkIndexerItem, res esutil.BulkIndexerResponseItem, err error) {
-				e.OnFail(IndexError{
-					Index:  res.Index,
-					Reason: res.Error.Reason,
-				})
+				if e.OnFail != nil {
+					e.OnFail(IndexError{
+						Index:  res.Index,
+						Reason: res.Error.Reason,
+					})
+				}
 			},
 		},
 	)
