@@ -11,10 +11,10 @@ import (
 
 	"github.com/Shopify/sarama"
 	gojson "github.com/goccy/go-json"
-	"github.com/ssnaruto/xtools/agg_system"
-	"github.com/ssnaruto/xtools/logx"
-	"github.com/ssnaruto/xtools/shutdown"
-	"github.com/ssnaruto/xtools/utils"
+	"github.com/vli-platform/go-tools/agg_system"
+	"github.com/vli-platform/go-tools/logx"
+	"github.com/vli-platform/go-tools/shutdown"
+	"github.com/vli-platform/go-tools/utils"
 )
 
 func main() {

@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/Shopify/sarama"
-	"github.com/ssnaruto/xtools/logx"
+	"github.com/vli-platform/go-tools/logx"
 )
 
 func NewWorkerChannel(cfg Config) *WorkerChannel {

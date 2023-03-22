@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/ssnaruto/xtools/utils"
+	"github.com/vli-platform/go-tools/utils"
 )
 
 func NewTelegram(chatId, apiURL string) NotifyChannel {

@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ssnaruto/xtools/notify"
+	"github.com/vli-platform/go-tools/notify"
 )
 
 func SetConfig(cfg Config) error {

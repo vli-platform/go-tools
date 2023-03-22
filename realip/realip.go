@@ -10,8 +10,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ssnaruto/xtools/logx"
-	"github.com/ssnaruto/xtools/utils"
+	"github.com/vli-platform/go-tools/logx"
+	"github.com/vli-platform/go-tools/utils"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/robfig/cron/v3"

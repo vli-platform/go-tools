@@ -1,4 +1,4 @@
-module github.com/ssnaruto/xtools
+module github.com/vli-platform/go-tools
 
 go 1.18
 

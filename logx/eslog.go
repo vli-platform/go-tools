@@ -12,8 +12,8 @@ import (
 	"github.com/elastic/go-elasticsearch/v8"
 	"github.com/elastic/go-elasticsearch/v8/esutil"
 	uuid "github.com/gofrs/uuid"
-	"github.com/ssnaruto/xtools/color"
-	"github.com/ssnaruto/xtools/utils"
+	"github.com/vli-platform/go-tools/color"
+	"github.com/vli-platform/go-tools/utils"
 )
 
 type esLog struct {
